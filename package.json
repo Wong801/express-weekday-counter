@@ -1,0 +1,38 @@
+{
+  "name": "weekday-counter",
+  "version": "1.0.0",
+  "description": "count how many weekday between 2 dates",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "babel-node src/index.js",
+    "build": "babel src -d dist",
+    "lint:src": "eslint src/**/*.js --fix",
+    "lint:spec": "eslint spec/**/*.js --fix",
+    "lint": "npm run lint:src && npm run lint:spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-holidays": "^3.16.7",
+    "dayjs": "^1.11.5",
+    "express": "^4.17.2",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.5.2",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.5.3",
+    "jest-junit": "^12.0.0",
+    "lint-staged": "^10.5.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
